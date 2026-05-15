@@ -67,6 +67,7 @@ public class OthelloServlet extends HttpServlet {
 	}
 
 	// TODO ブラウザバック時の画面制御対応
+	// TODO CPU版
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
