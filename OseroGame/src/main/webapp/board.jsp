@@ -21,7 +21,7 @@
 				<form action="Servlet" method="post" >
 					<input type = "hidden" name = "row" value = "<%= i %>">
 					<input type = "hidden" name = "column" value = "<%= j %>">
-					<button type="submit">
+					<button type="submit" class = "board-button">
 						<%if(board[i][j] == 1){ %>
 							●
 						<%}else if(board[i][j] == 2) {%>
@@ -35,6 +35,11 @@
 		</tr>	
 		<%} %>	
 	</table>
+	
+	<form action="Servlet" method = "post">
+		<input type = "hidden" name = "reset" value = "reset">
+		<button type = "submit" class = "reset-button">リセット</button>
+	</form>
 	
 </body>
 </html>
